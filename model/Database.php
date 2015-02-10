@@ -28,18 +28,21 @@ class Database {
             die("<p>Error: " . $this->connection->connect_error . "</p>");
         }
     }
-//Below is the code rhat closes my connection
+//Below is the code that closes my connection
     public function closeConnection() {
         if(isset($this->connection)) {
-            $this->coonnection->close();
+            $this->connection->close();
         }
     }
 
     public function query($string) {
+//Below is the code that opens my connection so I can test it
         $this->openConnection();
-        
+//Below is the code that tests my query connection
         $query = $this->connection->query($string);
         
+//Below is the code that closes my connection
+  
         $this->closeConnection();
         
         return $query;
