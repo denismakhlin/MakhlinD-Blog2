@@ -2,8 +2,10 @@
 closed like it is in my index.php page-->
 <?php
 
-//Below is the code that stores the path to my project
+require_once(__DIR__ . "/database.php");
+session_start();
 
+//Below is the code that stores the path to my project
 $path = "/makhlind-blog/";
       
 //Below is code that says everything on the right will be stored in the right 
@@ -15,7 +17,13 @@ $path = "/makhlind-blog/";
     $password = "root";
 //This is the name of my database 
     $database = "blog_db";
-     
-    
+//Below my if statement is checking if the connection  is set if it is it will
+//run the code inside it
+    if(!isset($_SESSION["connection"])) {
+    //Below is the code that allows me to accses my mysqli server and the code in my 
+    //datababse to be stored in the connection object 
+        $connection = new Database($host, $username, $password, $database);
+        $_SESSION["connection"] = $connection;
+    } 
    
 
