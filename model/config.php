@@ -16,7 +16,7 @@ $path = "/makhlind-blog/";
 //    You need a password to connect to my server    
     $password = "root";
 //This is the name of my database 
-    $database = "blog_db";
+    $database = "blog_db"; 
 //Below my if statement is checking if the connection  is set if it is it will
 //run the code inside it
     if(!isset($_SESSION["connection"])) {
