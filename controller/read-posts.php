@@ -10,7 +10,7 @@
 //Below is the code ethat sets up each post to have headers, paragrapgs and 
 //breaks
         while($row = mysqli_fetch_array($result)) {
-            echo "div class='post'>";
+            echo "<div class='post'>";
             echo "<h2>" . $row['title'] . "</h2>";
             echo "<br />";
             echo "<p>" . $row['post'] . "</p>";
