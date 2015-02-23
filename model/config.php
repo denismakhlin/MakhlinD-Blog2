@@ -4,6 +4,8 @@ closed like it is in my index.php page-->
 
 require_once(__DIR__ . "/database.php");
 session_start();
+//The code below regenerates a session with a new id and delete the old session
+session_regenerate_id(true);
 
 //Below is the code that stores the path to my project
 $path = "/makhlind-blog/";
