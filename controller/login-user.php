@@ -19,11 +19,20 @@
 //            website
             $_SESSION["authenticated"] = true;
             echo "<p>Login Successful!</p>";
+//    Below the code redirects me back to the index page if the username or 
+//    password is correct
+            header('Location: http://localhost/makhlind-blog/index.php');
         }
+//    Below the code redirects me back to the page if the username or password 
+//    is incorrect
         else {
             echo "<p>Invalid username and password</p>";
+            header('Location: http://localhost/makhlind-blog/login.php');
         }
     }
+//    Below the code redirects me back to the page if the username or password 
+//    is incorrect
     else {
         echo "<p>Invalid username and password</p>";
+        header('Location: http://localhost/makhlind-blog/login.php');
     }

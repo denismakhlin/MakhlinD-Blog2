@@ -22,10 +22,16 @@ $query = $_SESSION["connection"]->query("INSERT INTO users SET "
         . "salt = '$salt'");
 
     if($query) {
+//    Below I redirect my user if the username is corect and It lets me know 
+//    iif the usernname was correct
         echo "Successfully created user: $username"; 
+        header('Location: http://localhost/makhlind-blog/index.php');
     } 
+//    Below I redirect my user if the username is incorect and It lets me know 
+//    what eror it was
     else {
         echo "<p>" . $_SESSION["connection"]->error . "</p>";
+        header('Location: http://localhost/makhlind-blog/index.php');
     }
 
 

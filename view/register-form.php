@@ -22,7 +22,7 @@
 <div id='cssmenu'>
 
             <ul>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT7bZWxuvmHuCdUclTbgoHuyyo_Bnd1FLuc8B0Yok2jbgu1nzF" <img src="img/carwashlogo.png" height="65" width="75" style="padding-top: 5px; padding-bottom: 5px; padding-left: 10px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT7bZWxuvmHuCdUclTbgoHuyyo_Bnd1FLuc8B0Yok2jbgu1nzF" height="65" width="75" style="padding-top: 5px; padding-bottom: 5px; padding-left: 10px;">
                 <li><a href='index.php'><span>Home</span></a></li>
 
                 <li><a href="post.php" ><span>Post</span></a></li>

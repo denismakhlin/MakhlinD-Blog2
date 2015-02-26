@@ -19,10 +19,12 @@ require_once(__DIR__ . "/../model/config.php");
 //true
     if ($query) {
         echo "<p>Successfully inserted post: $title</p>";
+        header('Location: http://localhost/makhlind-blog/index.php');
     }
 //Below it is saying that If my query wasnt succesfull it will echo out the 
 //connection error
     else {
         echo "<p>" . $_SESSION["connection"]->error . "</p>";
+        header('Location: http://localhost/makhlind-blog/index.php');
     }
     

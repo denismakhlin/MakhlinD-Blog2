@@ -21,10 +21,10 @@ require_once(__DIR__ ."/../model/config.php");
             . "PRIMARY KEY (id))");
 //Below is the code that creates the table once
     if($query) {
-        echo "<p>Successfully create table: posts</p>";
+        echo "<p style='color: transparent'>Successfully create table: posts</p>";
 //Below is the code that says the query on top is already existing
     } else {
-        echo "<p>" . $_SESSION["connection"]->error . "</p>";
+        echo "<p style='color: transparent'>" . $_SESSION["connection"]->error . "</p>";
     }
     
     $query = $_SESSION["connection"]->query("CREATE TABLE users ("
@@ -34,12 +34,13 @@ require_once(__DIR__ ."/../model/config.php");
             . "password char(128) NOT NULL,"
             . "salt char(128) NOT NULL,"
             . "PRIMARY KEY (id))");
-            
+//      Below it tells me if tables were made      
     if($query) {
-        echo "<p>Successfully created table: users</p>";
+        echo "<p style='color: transparent'>Successfully created table: users</p>";
     }
+//      Below it tells me if tables were not made
     else {
-        echo "<p>" . $_SESSION["connection"]->error . "</p>";
+        echo "<p style='color: transparent'>" . $_SESSION["connection"]->error . "</p>";
     }
   
 
