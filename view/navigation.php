@@ -13,12 +13,3 @@
 ?>
 
 <!--Below is the code to navigate-->
-<nav>
-    
-    <ul>
-        <!--below is the code that links to my post form-->
-        <li><a href="<?php echo $path . "post.php"?>">Blog Post Form</a></li>
-        <li><a href="register.php">Register Form</a></li>
-        <li><a href="login.php">Login</a></li>
-    </ul>
-</nav>

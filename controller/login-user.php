@@ -18,7 +18,7 @@
 //            are logged in, and will keep you logged in within the whole 
 //            website
             $_SESSION["authenticated"] = true;
-            echo "<p>Login Successful!</p>"; 
+            echo "<p>Login Successful!</p>";
         }
         else {
             echo "<p>Invalid username and password</p>";
